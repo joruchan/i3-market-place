@@ -7,12 +7,6 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" href="../../assets/css/style.css">
-	<script
-  		src="https://code.jquery.com/jquery-3.4.1.min.js"
-  		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-		crossorigin="anonymous">
-	</script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<title>i3 GiftBox</title>
 </head>
 <body>
