@@ -16,16 +16,16 @@ include '../partials/header.php';
           <label for="user-email">Email</label>
         </div>
         <div class="input-field">
+          <input id="user-password" type="password" name="user-password" class="validate">
+          <label for="user-password">Password</label>
+        </div>
+        <div class="input-field">
             <select id="user-group" name="user-group">
                 <option value="" disabled selected>Choose your option</option>
                 <option value="1">Game</option>
                 <option value="2">WAD</option>
                 <option value="3">Web</option>
             </select>
-          <label for="user-group">Your Group</label>
-        </div>
-        <div class="input-field">
-          <input id="user-password" type="password" name="user-password" class="validate">
           <label for="user-group">Your Group</label>
         </div>
         <div class="file-field input-field">

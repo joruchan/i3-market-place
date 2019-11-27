@@ -1,4 +1,4 @@
-<footer class="page-footer teal">
+<footer class="">
     <div class="container">
     </div>
     <div class="footer-copyright">
