@@ -10,3 +10,28 @@
 	<title>i3 GiftBox</title>
 </head>
 <body>
+	<header>
+		<nav>
+			<div class="navbar pink lighten-3">
+				<a href="#!" class="logo">Logo</a>
+				<ul class="right hide-on-med-and-down">
+					<li>
+						<form action="">
+							<div class="input-field">
+								<input id="search" type="search" required>
+								<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+								<i class="material-icons">close</i>
+							</div>
+						</form>
+					</li>
+					<li>
+						<a class="waves-effect waves-light btn pink accent-4">
+							<i class="material-icons left">face</i>
+							Profile
+						</a>
+					</li>
+				</ul>
+		    </div>
+	  	</nav>
+	</header>
+	
