@@ -4,7 +4,7 @@ include '../partials/header.php';
 
 <main>
 <div class="container">
-    <h1>Sign Up</h1>
+    <h1>Login In</h1>
 
     <form action="#" method="POST" class="row">
         <div class="input-field col s6">
