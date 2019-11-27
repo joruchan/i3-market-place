@@ -1,0 +1,16 @@
+.container-main{
+	margin: 0 10%;
+	.content-main{
+		padding-top: 5rem;
+		min-height: 200px;
+		.category-block{
+			height: 100%;
+			border: 1px solid black;
+			border-radius: 15px;
+		}
+		.objects-block{
+			height: 100%;
+			border: 1px solid blue;
+		}
+	}
+}

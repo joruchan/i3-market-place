@@ -1,0 +1,20 @@
+[
+    {
+        "idProduct": "1",
+        "productName": "Nintendo Switch",
+        "productImg": "https://cdn.pocket-lint.com/r/s/320x/assets/images/140007-games-review-nintendo-switch-review-image1-lp6zy9awm0.jpg?v1",
+        "description": "The Nintendo Switch is a video game console developed by Nintendo, released on March 3, 2017.",
+        "creationDate": "2019-11-27",
+        "creator": "7",
+        "claimer": null
+    },
+    {
+        "idProduct": "2",
+        "productName": "Playstation 4",
+        "productImg": "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwj0lqby14rmAhVlA2MBHSM2DggQjRx6BAgBEAQ&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FFichier%3ASony-PlayStation-4-PS4-wDualShock-4.jpg&psig=AOvVaw3PqyNdzNstaVrVZcVwen5t&ust=1574954235821956",
+        "description": "The Nintendo Switch is a video game console developed by Nintendo, released on March 3, 2017.",
+        "creationDate": "2019-11-27",
+        "creator": "7",
+        "claimer": null
+    }
+]
