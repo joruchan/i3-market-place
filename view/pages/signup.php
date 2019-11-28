@@ -37,6 +37,7 @@ include '../partials/header.php';
                 <input id="user-img" name="user-img" class="file-path validate" type="text">
             </div>
         </div>
+        <a class="waves-effect waves-light btn">Sign Up</a>
     </form>
 
 </div>
