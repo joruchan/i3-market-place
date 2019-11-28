@@ -1,0 +1,19 @@
+
+form {
+    margin-bottom: 5%;
+}
+
+
+
+// BUTTONS
+
+.btn {
+    background-color:$primary-light;
+    &:hover {
+        background-color:$primary;
+    }
+}
+
+.file-field .btn {
+    background-color: $dark;
+}

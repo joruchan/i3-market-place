@@ -1,4 +1,5 @@
 <?php
+include '../partials/head.php';
 include '../partials/header.php';
 ?>
 
@@ -6,7 +7,7 @@ include '../partials/header.php';
 <div class="container">
     <h1>Sign Up</h1>
 
-    <form action="#" method="POST">
+    <form id="sign-up" action="../dataDB/signupUsers.php" method="POST">
         <div class="input-field">
           <input id="user-name" type="text" name="user-name" class="validate">
           <label for="user-name">User Name</label>
@@ -22,9 +23,9 @@ include '../partials/header.php';
         <div class="input-field">
             <select id="user-group" name="user-group">
                 <option value="" disabled selected>Choose your option</option>
-                <option value="1">Game</option>
-                <option value="2">WAD</option>
-                <option value="3">Web</option>
+                <option value="GAME">Game</option>
+                <option value="WAD">WAD</option>
+                <option value="WEB">Web</option>
             </select>
           <label for="user-group">Your Group</label>
         </div>
@@ -37,8 +38,9 @@ include '../partials/header.php';
                 <input id="user-img" name="user-img" class="file-path validate" type="text">
             </div>
         </div>
+        <a class="waves-effect waves-light btn" id='btnSignup'>Sign Up</a>
     </form>
-
+  <script src='../../assets/js/app/signupBtn.js'></script>
 </div>
 
 </main>

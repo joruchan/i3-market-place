@@ -1,4 +1,9 @@
-.footer-copyright {
-    text-align: center;
-    padding: 2%;
+footer.page-footer {
+    padding-top: 0px;
+    background-color: $dark;
+    .footer-copyright {
+        text-align: center;
+        padding: 2%;
+        
+    }
 }

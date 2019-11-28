@@ -1,4 +1,4 @@
-<footer class="page-footer pink lighten-3">
+<footer class="page-footer">
     <div class="container">
 	</div>
 	<div class="footer-copyright">

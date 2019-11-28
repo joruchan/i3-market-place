@@ -2,12 +2,14 @@
 	display:flex;
 	justify-content: space-between;
 	height: 100%;
+	background-color: $dark;
 	ul{
 		margin-right: 3rem;
 		li{
 			height:100%;
 			a.btn{
 				margin-right: 0px;
+				background-color: $primary;
 			}
 		}
 	}
@@ -29,7 +31,7 @@
 			input#search{
 				margin: 0;
 				width: 300px;
-				border-bottom: 1px solid hotpink;
+				border-bottom: 1px solid $primary;
 				padding-left: 50px;
 				&:focus{
 					border-radius: 25px;
