@@ -42,7 +42,7 @@ export const createObjectCard = function(){
 				if(object.claimer !== null){
 					card += `<p class="btn light-blue accent-2 right">Claimed!</p>`;
 				} else{
-					card += `<a class="waves-effect waves-light btn pink accent-4 right" id="btn-claim">I want it!</a>`;
+					card += `<a class="waves-effect waves-light btn right" id="btn-claim">I want it!</a>`;
 				}
 				card += `</div></div></div>`;
 				$("#product-list").append(card);

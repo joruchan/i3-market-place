@@ -3,10 +3,6 @@ form {
     margin-bottom: 5%;
 }
 
-.file-field .btn {
-    background-color: $dark;
-}
-
 
 
 // BUTTONS
@@ -16,4 +12,8 @@ form {
     &:hover {
         background-color:$primary;
     }
+}
+
+.file-field .btn {
+    background-color: $dark;
 }
