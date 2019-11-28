@@ -8,8 +8,8 @@ include '../partials/head.php';
 
         <form action="#" method="POST" class="row" id="login">
             <div class="input-field">
-            <input id="user-name" type="text" name="user-name" class="validate">
-            <label for="user-name">User Name</label>
+                <input id="user-name" type="text" name="user-name" class="validate">
+                <label for="user-name">User Name</label>
             </div>
             <div class="input-field">
                 <input id="user-password" type="password" name="user-password" class="validate">
