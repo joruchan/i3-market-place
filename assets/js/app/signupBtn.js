@@ -9,19 +9,15 @@
             if (xhr.readyState === 4){
                 console.log(xhr.status);
                 if (xhr.status === 200){
-                    console.log('on change d\'état');
                     console.log(xhr.responseText);
                     // let arrayObjs = JSON.parse(xhr.responseText);
-                    // generateDom(arrayObjs); 
+                    // tafonction(arrayObjs); 
                     window.location.replace('http://localhost/Hackathon/i3-market-place/view/pages/');
-    
                 }        
             }
         };
         xhr.open("POST", "../../view/dataDB/signupUsers.php");
         let formulaire = new FormData(document.getElementById('sign-up'));
         xhr.send(formulaire);
-        console.log('bouton cliqué');
-    
     });    
 
