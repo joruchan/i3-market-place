@@ -32,10 +32,20 @@ include '../partials/header.php';
         <div class="file-field input-field">
             <div class="btn">
                 <span>Image</span>
-                <input type="file" name='photo'>
+                <input type="file" id="file" name='photo'>
+                <input type="hidden" name="image" value="">
             </div>
             <div class="file-path-wrapper">
                 <input id="user-img" name="user-img" class="file-path validate" type="text">
+            </div>
+        </div>
+        <div class="input-field row">
+            <div class="col s12 l6">
+                <div id="cropper">
+                </div>
+            </div>
+            <div id="crop-result" class="col s12 l6">
+                    <img src="">
             </div>
         </div>
         <a class="waves-effect waves-light btn" id='btnSignup'>Sign Up</a>
@@ -44,7 +54,10 @@ include '../partials/header.php';
 </div>
 
 </main>
-
+    
+    <script>
+        
+    </script>
 
 <?php
 include '../partials/footer.php';
