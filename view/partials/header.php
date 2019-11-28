@@ -13,7 +13,7 @@
 	<header>
 		<nav>
 			<div class="navbar pink lighten-3">
-				<a href="#!" class="logo">Logo</a>
+				<a href="#!" class="logo"><img src="../../assets/img/Logo.png"></a>
 				<ul class="right hide-on-med-and-down">
 					<li>
 						<form action="">
@@ -25,9 +25,13 @@
 						</form>
 					</li>
 					<li>
-						<a class="waves-effect waves-light btn pink accent-4">
+						<a class="waves-effect waves-light btn pink accent-4 profile-btn">
 							<i class="material-icons left">face</i>
 							Profile
+						</a>
+						<a class="waves-effect waves-light btn pink accent-4 disconnect-btn">
+							<i class="material-icons left">highlight_off</i>
+							Log Out
 						</a>
 					</li>
 				</ul>

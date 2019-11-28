@@ -1,0 +1,10 @@
+[
+    {
+        "idUser": 0,
+        "userEmail": "toto@toto.com",
+        "password": "toto1234",
+        "userName": "Toto",
+        "userGroup": "WAD",
+        "imgProfile": "https://giantbomb1.cbsistatic.com/uploads/original/0/6087/2437349-pikachu.png"
+    }
+]

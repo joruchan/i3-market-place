@@ -1,7 +1,17 @@
+import {createObjectCard, createCategorySelect} from "./app/createComponents.js";
+import {getUsers} from "./app/getData.js";
 
-    $(document).ready(function(){
-        $('select').formSelect();
-      });
+getUsers();
+createCategorySelect();
+createObjectCard();
+console.log("toto");
+
+$(document).ready(function(){
+	$('select').formSelect();
+});
+
+
+
 
 
 // document.addEventListener('DOMContentLoaded', function() {

@@ -2,11 +2,23 @@
 include '../partials/header.php';
 ?>
 
-<main>
-<div class="container">
-    <h1>Gift Box</h1>
-</div>
-
+<main class="container-main">
+	<div class="row content-main">
+		<div class="col s12 m3 category-block z-depth-1">
+			<p>Search by Category</p>
+			<div id="category-list">
+				<form action="#" id="categoryForm">
+    
+  				</form>
+			</div>
+		</div>
+		<div class="col s12 m8 objects-block z-depth-1">
+			<p>Current Listings</p>
+			<div id="product-list">
+				
+			</div>
+		</div>
+	</div>
 </main>
 
 
