@@ -18,7 +18,7 @@
                 }        
             }
         };
-        xhr.open("POST", "../../view/dataDB/indexProducts.php");
+        xhr.open("POST", "../../view/dataDB/signupUsers.php");
         let formulaire = new FormData(document.getElementById('sign-up'));
         xhr.send(formulaire);
         console.log('bouton cliqué');
