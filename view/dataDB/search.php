@@ -11,9 +11,9 @@ $db = new PDO(DBDRIVER.':host='.DBHOST.';port='.DBPORT.
 
     $search = $_POST['search'];
     
-    if(in_array($search, $catArray)){
+    if(in_array(ucfirst($search), $catArray)){
         $j = $db->prepare("SELECT * FROM product INNER JOIN productcategory ON product.idProduct = productcategory.idProduct INNER JOIN category ON productcategory.idCategory = category.idCategory WHERE category.categoryName = :search ");
-        $j->bindValue(':search', $search);
+        $j->bindValue(':search', ucfirst($search));
         $j->execute();
         $donnees = $j->fetchAll(PDO::FETCH_ASSOC);
         echo json_encode($donnees);    
