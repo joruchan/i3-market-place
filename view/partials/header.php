@@ -17,7 +17,7 @@
 						<i class="material-icons left">face</i>
 						Profile
 					</a>
-					<a class="waves-effect waves-light btn disconnect-btn">
+					<a class="waves-effect waves-light btn disconnect-btn" href='../dataDB/logOff.php'>
 						<i class="material-icons left">highlight_off</i>
 						Log Out
 					</a>

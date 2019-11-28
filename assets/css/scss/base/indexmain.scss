@@ -21,6 +21,18 @@
 			height: 100%;
 			margin: 1vw;
 			padding: 10px 20px;
+			.card-image{
+				position:relative;
+				.mini-avatar{
+					position: absolute;
+					top: 0;
+					left: 0;
+					max-height: 50px;
+					max-width: 50px;
+					z-index: 1;
+					border-radius: 50%;
+				}
+			}
 			.collapsible{
 				box-shadow: none;
 				border: none;

@@ -1,8 +1,10 @@
-import {createObjectCard, createCategorySelect} from "./app/createComponents.js";
-import {getUsers} from "./app/getData.js";
+import {createObjectCardInit, createCategorySelect} from "./app/createComponents.js";
+import {allObjects, getObjects} from "./app/getData.js";
 
-getUsers();
+createObjectCardInit();
+
 createCategorySelect();
+
 createObjectCard();
 
 $(document).ready(function(){

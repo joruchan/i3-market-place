@@ -21,6 +21,20 @@ form {
     }
 }
 
+#signup{
+    .input-field{
+        
+        margin: 30px auto;
+        
+        input{
+            background-color: white;
+            border: hidden;
+            border-radius: 10px;
+            height: 50px;
+        }
+    }
+}
+
 .input-field.col label {
     left: 0;
 }

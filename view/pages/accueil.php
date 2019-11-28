@@ -6,17 +6,18 @@ include '../partials/head.php';
     <div class="container">
     <img id="logo" src="../../assets/img/Logo.png" alt="">
 
-        <form action="#" method="POST" class="row" id="login">
-            <div class="input-field">
-                <input id="user-name" type="text" name="user-name" class="validate">
-                <label for="user-name">User Name</label>
+        <form action="../dataDB/signIn.php" method="POST" class="row" id="login">
+            <div class="input-field col s6">
+            <input id="user-email" type="email" name="user-email" class="validate">
+            <label for="user-email">Email</label>
             </div>
             <div class="input-field">
                 <input id="user-password" type="password" name="user-password" class="validate">
                 <label for="user-password">Password</label>
             </div>
-            <a class="waves-effect waves-light btn">Log me in</a>
+            <button class="waves-effect waves-light btn" type='submit'>Log me in</button>
         </form>
+        <!-- <script src='../../assets/js/app/signIn.js'></script> -->
     </div>
 </main>
 
