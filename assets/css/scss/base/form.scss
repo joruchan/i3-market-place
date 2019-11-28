@@ -18,14 +18,15 @@ form {
         label{
             top: -8px;
 			left: 10px;
+		}
+		input:focus:not([readonly])+label{
 			color: $primary-light;
-        }
+		}
     }
 }
 
 #signup{
     .input-field{
-        
         margin: 30px auto;
         label{
 			padding-left: 10px;
