@@ -1,6 +1,7 @@
-import {allObjects, allUsers, allCategories} from "./getData.js";
+import {allCategories} from "./getData.js";
 
 let owner = '';
+let ownerPic = '';
 export const createCategorySelect = function(){
 	for( const category of allCategories ){
 		let select = `<p>
@@ -13,21 +14,37 @@ export const createCategorySelect = function(){
 	}
 }
 
-export const createObjectCard = function(){
-	axios.get('../../config/testjsons/objects.json')
+export const createObjectCardInit = function(){
+	axios.get('../../view/dataDB/allProducts.php')
 		.then((response) => response.data)
 		.then((objects) => {
-			for (const object of objects){
+			createObjectCardFromArray(objects);
+		})
+		.then(()=>console.log('objects generated'));
+	}
+
+let allUsers = [];
+export const createObjectCardFromArray = function(array){
+	
+	axios.get('../../view/dataDB/allUsers.php')
+		.then((data) => data.data)
+		.then((users) => {
+			allUsers = users;
+		})
+		.then(() => {
+			for (const object of array){
 				for(const user of allUsers){
 					if(object.creator == user.idUser){
 						owner = user.userName;
+						ownerPic = user.imgProfile;
 					}
 				}
 				let card = `
 					<div class="col s12 m6 l4">
 						<div class="card">
 							<div class="card-image">
-							<img class="materialboxed" src="${object.productImg}">
+								<img src="${ownerPic}" class="circle tooltipped mini-avatar" data-position="right" data-tooltip="${owner}">
+								<img src="${object.productImg}">
 							</div>
 							<div class="card-content">
 								<span class="flow-text product-name">${object.productName}</span>
@@ -36,9 +53,9 @@ export const createObjectCard = function(){
 								  <div class="collapsible-header"><i class="material-icons" id="add">add</i>Description</div>
 								  <div class="collapsible-body"><span>${object.description}</span></div>
 								</li>
-							  	</ul>
+								  </ul>
 								<p></p>
-								<p>Added by : ${owner}</p>
+								<p>Added by : </p>
 					`;
 				if(object.claimer !== null){
 					card += `<p class="btn light-blue accent-2 right">Claimed!</p>`;
@@ -48,8 +65,9 @@ export const createObjectCard = function(){
 				card += `</div></div></div>`;
 				$("#product-list").append(card);
 				$(".collapsible").collapsible();
-				$('.materialboxed').materialbox();
+				$('.tooltipped').tooltip();
 			}
+
 			$('.btn-claim').on("click", function(event){
 				let productName = event.target.parentElement.getElementsByClassName("product-name")[0].innerText;
 				let newButton = `<p class="btn light-blue accent-2 right just-claimed">Claimed!</p>`;
@@ -61,15 +79,16 @@ export const createObjectCard = function(){
 					$(event.target.parentElement.getElementsByClassName("just-claimed")[0]).fadeIn();
 					$(event.target).remove();
 				}, 500);
-
+		
 				M.toast({
 					html: 'You have claimed ' + productName + ' !', 
 					completeCallback: function(){
-
+		
 					}
 				});
 			})
-		});
+
+		})
 }
 
 /**
