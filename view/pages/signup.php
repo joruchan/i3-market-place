@@ -33,7 +33,7 @@ include '../partials/head.php';
             <div class="btn">
                 <span>User Image</span>
                 <input type="file" id="file" name='photo'>
-                <input type="hidden" name="image" value="">
+                <input type="hidden" name="hidden-image" value="">
             </div>
             <div class="file-path-wrapper">
                 <input id="user-img" name="user-img" class="file-path validate" type="text">
