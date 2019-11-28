@@ -7,7 +7,7 @@ include '../partials/head.php';
     <img id="logo" src="../../assets/img/Logo.png" alt="">
 
         <form action="../dataDB/signIn.php" method="POST" class="row" id="login">
-            <div class="input-field col s6">
+            <div class="input-field">
             <input id="user-email" type="email" name="user-email" class="validate">
             <label for="user-email">Email</label>
             </div>
