@@ -12,9 +12,10 @@ export const createCategorySelect = function(){
 		$("#categoryForm").append(select);
 	}
 }
+
 export const createObjectCard = function(){
 	axios.get('../../config/testjsons/objects.json')
-		.then((data) => data.data)
+		.then((response) => response.data)
 		.then((objects) => {
 			for (const object of objects){
 				for(const user of allUsers){
@@ -29,7 +30,7 @@ export const createObjectCard = function(){
 							<img class="materialboxed" src="${object.productImg}">
 							</div>
 							<div class="card-content">
-								<span class="flow-text">${object.productName}</span>
+								<span class="flow-text product-name">${object.productName}</span>
 								<ul class="collapsible">
 								<li>
 								  <div class="collapsible-header"><i class="material-icons" id="add">add</i>Description</div>
@@ -42,13 +43,32 @@ export const createObjectCard = function(){
 				if(object.claimer !== null){
 					card += `<p class="btn light-blue accent-2 right">Claimed!</p>`;
 				} else{
-					card += `<a class="waves-effect waves-light btn right" id="btn-claim">I want it!</a>`;
+					card += `<a class="waves-effect waves-light btn pink accent-4 right btn-claim" id="btn-claim">I want it!</a>`;
 				}
 				card += `</div></div></div>`;
 				$("#product-list").append(card);
 				$(".collapsible").collapsible();
 				$('.materialboxed').materialbox();
 			}
+			$('.btn-claim').on("click", function(event){
+				let productName = event.target.parentElement.getElementsByClassName("product-name")[0].innerText;
+				let newButton = `<p class="btn light-blue accent-2 right just-claimed">Claimed!</p>`;
+				$(event.target.parentNode).append($(newButton));
+				$(event.target.parentElement.getElementsByClassName("just-claimed")[0]).hide();
+				
+				$(event.target).fadeOut();
+				setTimeout(() => {
+					$(event.target.parentElement.getElementsByClassName("just-claimed")[0]).fadeIn();
+					$(event.target).remove();
+				}, 500);
+
+				M.toast({
+					html: 'You have claimed ' + productName + ' !', 
+					completeCallback: function(){
+
+					}
+				});
+			})
 		});
 }
 
