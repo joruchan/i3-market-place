@@ -1,5 +1,9 @@
 
-.file-field input[type="file"] {
+form {
+    margin-bottom: 5%;
+}
+
+.file-field .btn {
     background-color: $dark;
 }
 
@@ -8,5 +12,8 @@
 // BUTTONS
 
 .btn {
-    background-color:$primary;
+    background-color:$primary-light;
+    &:hover {
+        background-color:$primary;
+    }
 }
