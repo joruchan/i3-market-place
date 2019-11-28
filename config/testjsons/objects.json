@@ -25,5 +25,14 @@
         "creationDate": "2019-11-27",
         "creator": "0",
         "claimer": null
+    },
+    {
+        "idProduct": "4",
+        "productName": "Random item",
+        "productImg": "../../assets/img/categories/babyitems.png",
+        "description": "The Nintendo Switch is a video game console developed by Nintendo, released on March 3, 2017.",
+        "creationDate": "2019-11-27",
+        "creator": "0",
+        "claimer": null
     }
 ]
