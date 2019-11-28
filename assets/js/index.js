@@ -5,8 +5,6 @@ createObjectCardInit();
 
 createCategorySelect();
 
-createObjectCard();
-
 $(document).ready(function(){
 	$('select').formSelect();
 });
