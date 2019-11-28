@@ -1,4 +1,5 @@
 import {allCategories} from "./getData.js";
+import { fonctionClaimDB } from "./fonctionClaim.js";
 
 let owner = '';
 let ownerPic = '';
@@ -47,7 +48,7 @@ export const createObjectCardFromArray = function(array){
 								<img src="${object.productImg}">
 							</div>
 							<div class="card-content">
-								<span class="flow-text product-name">${object.productName}</span>
+								<span class="flow-text product-name" id="${object.idProduct}">${object.productName}</span>
 								<ul class="collapsible">
 								<li>
 								  <div class="collapsible-header"><i class="material-icons" id="add">add</i>Description</div>
@@ -84,6 +85,9 @@ export const createObjectCardFromArray = function(array){
 		
 					}
 				});
+				let productId = event.target.parentElement.firstElementChild.id;
+				fonctionClaimDB(productId);
+
 			})
 
 		})
