@@ -6,7 +6,7 @@ include '../partials/header.php';
 <div class="container">
     <h1>Sign Up</h1>
 
-    <form action="#" method="POST">
+    <form id="sign-up" action="#" method="POST">
         <div class="input-field">
           <input id="user-name" type="text" name="user-name" class="validate">
           <label for="user-name">User Name</label>
