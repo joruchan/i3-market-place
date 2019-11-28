@@ -7,7 +7,7 @@ include '../partials/header.php';
 <div class="container">
     <h1>Post an object</h1>
 
-    <form id="create-post" action="#" method="POST">
+    <form id="create-post" action="../dataDB/addProducts.php" method="POST">
         <div class="input-field">
           <input id="post-name" type="text" name="post-name" class="validate">
           <label for="post-name">Name</label>
@@ -19,7 +19,7 @@ include '../partials/header.php';
         </div>
 
         <div class="input-field col s12">
-            <select multiple>
+            <select multiple name="post-cat">
                 <?php
                 $catArray = array("Baby items","Bags","Books","Clothes","Creative Hobbies","Electronics","Furniture","Hygiene","Jewelry","Kitchenware","Miscellaneous","Movies","Music","Pet Accessories","Services","Shoes","Sports articles","Tickets","Video Games");
 
@@ -35,15 +35,15 @@ include '../partials/header.php';
         <div class="file-field input-field">
             <div class="btn">
                 <span>Image</span>
-                <input type="file">
+                <input type="file" name='photo'>
             </div>
             <div class="file-path-wrapper">
                 <input id="post-img" name="post-img" class="file-path validate" type="text">
             </div>
         </div>
-        <a class="waves-effect waves-light btn">Create</a>
+        <a class="waves-effect waves-light btn" id='btnProducts'>Create</a>
     </form>
-
+    <script src='../../assets/js/app/addProducts.js'></script>
 </div>
 
 </main>
