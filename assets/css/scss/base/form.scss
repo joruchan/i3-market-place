@@ -3,6 +3,23 @@ form {
     margin-bottom: 5%;
 }
 
+#login{
+    .input-field{
+        width: 200px;
+        margin: 50px auto;
+        
+        input{
+            background-color: white;
+            border: hidden;
+            border-radius: 10px;
+            height: 30px;
+        }
+    }
+}
+
+.input-field.col label {
+    left: 0;
+}
 
 
 // BUTTONS
