@@ -54,8 +54,6 @@ export const createObjectCardFromArray = function(array){
 								  <div class="collapsible-body"><span>${object.description}</span></div>
 								</li>
 								  </ul>
-								<p></p>
-								<p>Added by : </p>
 					`;
 				if(object.claimer !== null){
 					card += `<p class="btn light-blue accent-2 right">Claimed!</p>`;

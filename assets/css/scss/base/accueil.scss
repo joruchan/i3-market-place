@@ -3,11 +3,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 80%;   
-    text-align: center;
-    
+	text-align: center; 
+	form{
+		margin-top: 150px;
+	}
 }
 
 #logo{
     text-align: center;
-    padding-top: 5%;
+	padding-top: 5%;
+	width: 40%;
+	max-width: 400px;
 }
