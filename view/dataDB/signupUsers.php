@@ -13,9 +13,20 @@ $email = $_POST['user-email'];
 $nom = $_POST['user-name'];
 $pass = $_POST['user-password'];
 $group = $_POST['user-group'];
-$imgUser = ($_POST['user-img'] !== '' )? $_POST['user-img'] : 'https://robohash.org/'.$nom.'.png';
+
+
+
+$uploadDir = "../../assets/img/imgUpload/";
+$idUnique = uniqid().date("Y-m-d-h-i-s");
+$uploadFile = $uploadDir.$idUnique.$_POST['user-img'];
+$photo = $uploadDir.$idUnique.$_POST['user-img'];
+move_uploaded_file($_FILES['photo']['tmp_name'], $uploadFile );
+
+
+$imgUser = ($_POST['user-img'] !== '' )? $photo : 'https://robohash.org/'.$nom.'.png';
 
 $pass_hash = password_hash ($pass, PASSWORD_DEFAULT,['cost'=>12]);
+
 
 // pour verifier => password_verify($pass, $pass_hash)
 
