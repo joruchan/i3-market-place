@@ -1,4 +1,11 @@
 <?php
+
+session_start();
+if ($_SESSION['log'] != true){
+	header("location: http://localhost/Hackathon/i3-market-place/view/pages/signup.php");
+}
+
+
 include '../partials/head.php';
 include '../partials/header.php';
 ?>
