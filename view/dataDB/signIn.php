@@ -30,10 +30,10 @@ catch(Exception $e){
     if ($users != null && password_verify($pass, $users[0]["password"])){
         $_SESSION['log'] = true;
         $_SESSION['id'] = $users[0]["idUser"];
-        header("location: http://localhost/Hackathon/i3-market-place/view/pages/");
+        header("location: ../pages/");
     }
     else {
-        header("location: http://localhost/Hackathon/i3-market-place/view/pages/accueil.php");
+        header("location: ../pages/accueil.php");
     }
 
 ?>
