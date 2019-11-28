@@ -24,7 +24,7 @@ include '../partials/header.php';
                 $catArray = array("Baby items","Bags","Books","Clothes","Creative Hobbies","Electronics","Furniture","Hygiene","Jewelry","Kitchenware","Miscellaneous","Movies","Music","Pet Accessories","Services","Shoes","Sports articles","Tickets","Video Games");
 
                 for($i=0; $i < sizeof($catArray); $i++){ ?>
-                    <option value="<?php echo $i; ?>"><?php echo $catArray[$i]; ?></option>
+                    <option value="<?php echo $catArray[$i]; ?>"><?php echo $catArray[$i]; ?></option>
                 <?php } ?>
                 
             </select>
