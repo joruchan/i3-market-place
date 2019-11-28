@@ -32,7 +32,7 @@ include '../partials/header.php';
         <div class="file-field input-field">
             <div class="btn">
                 <span>Image</span>
-                <input type="file">
+                <input type="file" name='photo'>
             </div>
             <div class="file-path-wrapper">
                 <input id="user-img" name="user-img" class="file-path validate" type="text">
