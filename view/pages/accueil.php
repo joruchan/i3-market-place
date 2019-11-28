@@ -2,9 +2,9 @@
 include '../partials/head.php';
 ?>
 
-<main>
+<main id="accueil">
     <div class="container">
-        <h1>Login In</h1>
+    <img id="logo" src="../../assets/img/Logo.png" alt="">
 
         <form action="#" method="POST" class="row" id="login">
             <div class="input-field col s6">
