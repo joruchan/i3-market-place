@@ -1,5 +1,5 @@
 import {createObjectCardInit, createCategorySelect, createObjectCardFromArray} from "./app/createComponents.js";
-//import{crop} from "./app/crop.js"
+
 
 createObjectCardInit();
 createCategorySelect();
@@ -12,10 +12,6 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.sidenav').sidenav();
   });
-
-//crop();
-
-//crop();
 
 
 
