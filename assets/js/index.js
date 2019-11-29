@@ -8,6 +8,13 @@ $(document).ready(function(){
 	$('select').formSelect();
 });
 
+
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
+//crop();
+
 //crop();
 
 
@@ -36,3 +43,4 @@ catList.on('click', 'label', (e) => {
     formulaire.append('search', $(e.target).val());
     xhr.send(formulaire);
 });
+
