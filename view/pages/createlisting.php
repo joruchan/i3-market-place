@@ -42,15 +42,6 @@ include '../partials/header.php';
                 <input id="post-img" name="post-img" class="file-path validate" type="text">
             </div>
         </div>
-        <div class="row">
-            <div id="crop-result" class="col s12 l6">
-                <img src="../../assets/img/categories/miscellaneous.png" />
-            </div>
-            <div class="col s12 l6">
-                <div id="cropper">
-                </div>
-            </div>
-        </div>
         <a class="waves-effect waves-light btn" id='btnProducts'>Create</a>
     </form>
     <script src='../../assets/js/app/addProducts.js'></script>
