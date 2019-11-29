@@ -2,9 +2,8 @@
 
 session_start();
 if ($_SESSION['log'] != true){
-	header("location: ./accueil.php");
+	header("location: ../pages/accueil.php");
 }
-
 
 include '../partials/head.php';
 include '../partials/header.php';

@@ -3,10 +3,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 80%;   
+    text-align: center;
+}
+
+#logo{
+    text-align: center;
+    padding-top: 5%;
+    width: 50%;
 	text-align: center;
-	#logo{
-		max-width: 300px;
-	}
 	form{
 		max-width: 900px;
 		margin: 0 auto;

@@ -14,8 +14,8 @@
 				</li>
 				<li>
 					<a class="waves-effect waves-light btn profile-btn">
-						<i class="material-icons left">face</i>
-						Profile
+						<!-- <i class="material-icons left">face</i> -->
+						Create Post
 					</a>
 					<a class="waves-effect waves-light btn disconnect-btn" href='../dataDB/logOff.php'>
 						<i class="material-icons left">highlight_off</i>

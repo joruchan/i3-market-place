@@ -19,7 +19,7 @@ include '../partials/header.php';
         </div>
 
         <div class="input-field col s12">
-            <select multiple name="post-cat">
+            <select name="post-cat">
                 <?php
                 $catArray = array("Baby items","Bags","Books","Clothes","Creative Hobbies","Electronics","Furniture","Hygiene","Jewelry","Kitchenware","Miscellaneous","Movies","Music","Pet Accessories","Services","Shoes","Sports articles","Tickets","Video Games");
 
