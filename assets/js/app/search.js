@@ -1,7 +1,9 @@
 import { createObjectCardFromArray } from "./createComponents.js";
 
 const search = document.getElementById('search');
-search.addEventListener('submit', (e)=>{
+const searchF = document.getElementById('search-form');
+
+searchF.addEventListener('submit', (e)=>{
     e.preventDefault();
 });
 search.addEventListener('change', (e)=> {

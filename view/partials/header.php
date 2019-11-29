@@ -4,7 +4,7 @@
 			<a href="../pages" class="logo"><img src="../../assets/img/Logo.png"></a>
 			<ul class="right hide-on-med-and-down">
 				<li>
-					<form action="" id="search-form">
+					<form id="search-form">
 						<div class="input-field">
 							<input id="search" type="search" required>
 							<label class="label-icon" for="search"><i class="material-icons">search</i></label>
