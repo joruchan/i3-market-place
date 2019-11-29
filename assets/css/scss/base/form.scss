@@ -13,26 +13,39 @@ form {
             background-color: white;
             border: hidden;
             border-radius: 10px;
-            height: 30px;
+			height: 30px;
+			padding-left: 10px;
         }
         label{
             top: -8px;
-            left: 10px;
-        }
+			left: 10px;
+		}
+		input:focus:not([readonly])+label{
+			color: $primary-light;
+		}
     }
 }
 
 #signup{
     .input-field{
-        
         margin: 30px auto;
-        
+        label{
+			padding-left: 10px;
+		}
         input{
             background-color: white;
             border: hidden;
             border-radius: 10px;
-            height: 50px;
-        }
+			height: 50px;
+			padding-left: 10px;
+		}
+		input:focus:not([readonly]), .select-wrapper{
+			&+label{
+				color: $primary-light;
+				margin-top: -10px;
+			}
+
+		}
     }
 }
 

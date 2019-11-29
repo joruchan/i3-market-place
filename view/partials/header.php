@@ -24,6 +24,7 @@
 				</li>
 			</ul>
 		</div>
+		<script type="module" src='../../assets/js/app/search.js'></script>
 	</nav>
 </header>
 	

@@ -12,7 +12,7 @@
                     console.log(xhr.responseText);
                     // let arrayObjs = JSON.parse(xhr.responseText);
                     // tafonction(arrayObjs); 
-                    window.location.replace('http://localhost/Hackathon/i3-market-place/view/pages/');
+                    window.location.replace('../../view/pages/');
                 }        
             }
         };
