@@ -1,7 +1,17 @@
 footer.page-footer {
-    padding-top: 0px;
+    padding: 0 50px;
     background-color: $dark;
     .footer-copyright {
         text-align: center;
+    }
+    a {
+        color: $primary-light;
+        &:hover {
+            color: white;
+        }
+    }
+    #logo-i3 {
+        height: 30px;
+        width: auto;
     }
 }

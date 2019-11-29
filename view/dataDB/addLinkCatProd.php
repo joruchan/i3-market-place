@@ -10,43 +10,51 @@ $db = new PDO(DBDRIVER.':host='.DBHOST.';port='.DBPORT.
     .DBCHARSET,DBUSER,DBPASS);
 
 
-$cat =  $_SESSION['cat'];
-$prodNom =  $_SESSION['nomProd'];
-
-
-
-
-$categoryGet = $db->prepare('SELECT * FROM category WHERE categoryName = :catname');
-$categoryGet->bindValue(':catname', $cat);
-
-$categoryGet->execute();
-$categorie = $categoryGet->fetchAll(PDO::FETCH_ASSOC);
-
-$categorieID = $categorie[0]['idCategory'];
-
-
-$productGet = $db->prepare('SELECT * FROM product WHERE productName = :prodName');
-$productGet->bindValue(':prodName', $prodNom);
-
-$productGet->execute();
-$product = $productGet->fetchAll(PDO::FETCH_ASSOC);
-
-$productID = $product[0]['idProduct'];
-
-
-$p = $db->prepare('INSERT INTO productcategory(idProduct, idCategory)'
-            . ' VALUES(:productId, :catId)');
-    $p->bindValue(':productId', $productID);
-    $p->bindValue(':catId', $categorieID);
-
+if (isset($_SESSION['cat']) && isset($_SESSION['nomProd'])){
+    $cat =  $_SESSION['cat'];
+    $prodNom =  $_SESSION['nomProd'];
     
-    $p->execute();
+    
+    
+    
+    $categoryGet = $db->prepare('SELECT * FROM category WHERE categoryName = :catname');
+    $categoryGet->bindValue(':catname', $cat);
+    
+    $categoryGet->execute();
+    $categorie = $categoryGet->fetchAll(PDO::FETCH_ASSOC);
+    
+    $categorieID = $categorie[0]['idCategory'];
+    
+    
+    $productGet = $db->prepare('SELECT * FROM product WHERE productName = :prodName');
+    $productGet->bindValue(':prodName', $prodNom);
+    
+    $productGet->execute();
+    $product = $productGet->fetchAll(PDO::FETCH_ASSOC);
+    
+    $productID = $product[0]['idProduct'];
+    
+    
+    $p = $db->prepare('INSERT INTO productcategory(idProduct, idCategory)'
+                . ' VALUES(:productId, :catId)');
+        $p->bindValue(':productId', $productID);
+        $p->bindValue(':catId', $categorieID);
+    
+        
+        $p->execute();
+    
+    
+    
+        unset ($_SESSION["cat"]);
+        unset ($_SESSION["nomProd"]);
+    
+        header('location: ../pages');
+    
+} else {
+    header('location: ../pages/createlisting.php');
+ 
+}
 
 
-
-    unset ($_SESSION["cat"]);
-    unset ($_SESSION["nomProd"]);
-
-    header('location: ../pages');
 
 ?>

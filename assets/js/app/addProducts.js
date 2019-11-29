@@ -6,7 +6,6 @@ btnSignup.addEventListener('click', (e)=> {
     xhr.onreadystatechange = () => {
         if (xhr.readyState === 4){
             if (xhr.status === 200){
-
                 window.location.replace('../../view/dataDB/addLinkCatProd.php');
             }        
         }
