@@ -5,12 +5,12 @@ if ($_SESSION['log'] != true){
 	header("location: ../pages/accueil.php");
 }
 
-
 include '../partials/head.php';
 include '../partials/header.php';
 ?>
 
 <main class="container-main">
+	<div class="hidden-id" id="loggedInUserId"><?php echo $_SESSION['id']; ?></div>
 	<div class="row content-main">
 		<div class="col s12 m3 category-block z-depth-1">
 			<p>Search by Category</p>

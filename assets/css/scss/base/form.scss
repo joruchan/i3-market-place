@@ -47,10 +47,28 @@ form {
 
 		}
     }
+    
 }
 
 .input-field.col label {
     left: 0;
+}
+
+#create-post {
+    .dropdown-content li > span {
+        color: $primary;
+    }
+    .select-wrapper input.select-dropdown:focus {
+        border-bottom: 1px solid $primary-light;
+    }
+    textearea.materialize-textarea:focus:not([read-only]) {
+        border-bottom: 1px solid $primary-light;
+        box-shadow: $primary-light;
+        color:$primary-light;
+    }
+    label.active{
+        color:$primary-light;
+    }
 }
 
 

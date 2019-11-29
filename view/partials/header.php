@@ -1,8 +1,12 @@
 <header>
 	<nav>
 		<div class="navbar">
+<<<<<<< HEAD
 			<a href="#!" class="logo"><img src="../../assets/img/Logo.png"></a>
 			<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+=======
+			<a href="../pages" class="logo"><img src="../../assets/img/Logo.png"></a>
+>>>>>>> 62fc67e9caf5b138911ba4ebf107582175a1afaf
 			<ul class="right hide-on-med-and-down">
 				<li>
 					<form action="" id="search-form">
@@ -14,9 +18,9 @@
 					</form>
 				</li>
 				<li>
-					<a class="waves-effect waves-light btn profile-btn">
-						<i class="material-icons left">face</i>
-						Profile
+					<a class="waves-effect waves-light btn profile-btn" href='../pages/createlisting.php'>
+						<!-- <i class="material-icons left">face</i> -->
+						Create Product
 					</a>
 					<a class="waves-effect waves-light btn disconnect-btn" href='../dataDB/logOff.php'>
 						<i class="material-icons left">highlight_off</i>
