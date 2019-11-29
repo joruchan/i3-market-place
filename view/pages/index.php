@@ -13,7 +13,7 @@ include '../partials/header.php';
 	<div class="hidden-id" id="loggedInUserId"><?php echo $_SESSION['id']; ?></div>
 	<div class="row content-main">
 		<div class="col s12 m3 category-block z-depth-1">
-			<p>Search by Category</p>
+			<h4>Categories</h4>
 			<div id="category-list">
 				<form action="#" id="categoryForm">
     
@@ -21,7 +21,7 @@ include '../partials/header.php';
 			</div>
 		</div>
 		<div class="col s12 m8 objects-block z-depth-1">
-			<p>Current Listings</p>
+			<h4 class="objectListTitle">Current Items</h4>
 			<div id="product-list">
 				
 			</div>

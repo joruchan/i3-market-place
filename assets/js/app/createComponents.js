@@ -50,7 +50,7 @@ export const createObjectCardFromArray = function(array){
 					}
 				}
 				let card = `
-					<div class="col s12 m6 l4">
+					<div class="col s12 m6 l4" style="margin-left:0">
 						<div class="card">
 						<a href="#modal${object.idProduct}" class="modal-trigger">
 						<div class="card-image" style="background-image: url(${object.productImg}); background-size: cover; background-position: center center; height: 250px;">

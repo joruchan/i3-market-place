@@ -5,6 +5,20 @@
 		flex-wrap: wrap;
 		padding-top: 5rem;
 		min-height: 200px;
+		h4{
+			margin-bottom: 2.5rem;
+			&.objectListTitle{
+				margin-left: 7px;
+				background: linear-gradient(to right, black 20%, $primary 40%, $primary 60%, black 80%);
+				background-size: 200% auto;
+				color: black;
+				background-clip: text;
+				text-fill-color: transparent;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				animation: shine 2s linear infinite;
+			}
+		}
 		.category-block{
 			height: 100%;
 			border-radius: 15px;
@@ -21,6 +35,11 @@
 			height: 100%;
 			margin: 1vw;
 			padding: 10px 20px;
+			#product-list{
+				display:flex;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+			}
 			.card-image{
 				position:relative;
 				.mini-avatar{
@@ -33,6 +52,7 @@
 					background-position: center center;
 					z-index: 1;
 					border-radius: 50%;
+					margin: 10px;
 				}
 			}
 			.collapsible{
@@ -52,3 +72,10 @@
 		}
 	}
 }
+
+
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
