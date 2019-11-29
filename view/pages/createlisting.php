@@ -36,18 +36,19 @@ include '../partials/header.php';
             <div class="btn">
                 <span>Image</span>
                 <input id="file" type="file" name='photo'>
+                <input type="hidden" name="hidden-image" value="blob">
             </div>
             <div class="file-path-wrapper">
                 <input id="post-img" name="post-img" class="file-path validate" type="text">
             </div>
         </div>
-        <div class="input-field row">
+        <div class="row">
+            <div id="crop-result" class="col s12 l6">
+                <img src="../../assets/img/categories/miscellaneous.png" />
+            </div>
             <div class="col s12 l6">
                 <div id="cropper">
                 </div>
-            </div>
-            <div id="crop-result" class="col s12 l6">
-                <img src="">
             </div>
         </div>
         <a class="waves-effect waves-light btn" id='btnProducts'>Create</a>
@@ -61,3 +62,4 @@ include '../partials/header.php';
 <?php
 include '../partials/footer.php';
 ?>
+
