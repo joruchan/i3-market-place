@@ -1,7 +1,7 @@
 // export const crop = function (){
-//     const imgUrl = $('input[name=user-img]');
-//         console.log(imgUrl);
-//         console.log("hallo");
+//     // const imgUrl = $('input[name=post-img]');
+//     //     console.log(imgUrl);
+//     //     console.log("hallo");
 
 //         const fileInput = document.getElementById("file");
 //         const imgInput = document.querySelector("input[name=image]");
