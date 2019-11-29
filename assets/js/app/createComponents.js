@@ -53,7 +53,7 @@ export const createObjectCardFromArray = function(array){
 					<div class="col s12 m6 l4">
 						<div class="card">
 							<div class="card-image">
-								<img src="${ownerPic}" class="circle tooltipped mini-avatar" data-position="right" data-tooltip="${owner}">
+								<div class="tooltipped mini-avatar" style="background-image: url(${ownerPic});" data-position="right" data-tooltip="${owner}"> </div>
 								<img src="${object.productImg}">
 							</div>
 							<div class="card-content">
