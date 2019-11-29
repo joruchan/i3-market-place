@@ -98,7 +98,7 @@ export const createObjectCardFromArray = function(array){
 							To: ownerEmail,
 							From: 'jordanedevtest@gmail.com',
 							Subject: `${productName} a été claim par ${currentUserName}`,
-							Body: `Cher ${owner}, 
+							Body: `Cher/Chère ${owner}, 
 								${currentUserName} a claim votre objet "${productName}". Vous pouvez le/la contacter à l'adresse e-mail: ${currentUserEmail}.
 								Bonne journée et merci de participer à cet échange !`,
 							  });
