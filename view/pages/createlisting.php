@@ -9,17 +9,17 @@ include '../partials/header.php';
 
     <form id="create-post" action="../dataDB/addProducts.php" method="POST">
         <div class="input-field">
-          <input id="post-name" type="text" name="post-name" class="validate">
+          <input id="post-name" type="text" name="post-name" class="validate" required>
           <label for="post-name">Name</label>
         </div>
 
         <div class="input-field">
-          <textarea id="post-desc" name="post-desc" class="materialize-textarea"></textarea>
+          <textarea id="post-desc" name="post-desc" class="materialize-textarea" required></textarea>
           <label for="post-desc">Description</label>
         </div>
 
         <div class="input-field col s12">
-            <select name="post-cat">
+            <select name="post-cat" required>
                 <?php
                 $catArray = array("Baby items","Bags","Books","Clothes","Creative Hobbies","Electronics","Furniture","Hygiene","Jewelry","Kitchenware","Miscellaneous","Movies","Music","Pet Accessories","Services","Shoes","Sports articles","Tickets","Video Games");
 

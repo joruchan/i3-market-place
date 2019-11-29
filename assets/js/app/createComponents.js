@@ -52,10 +52,12 @@ export const createObjectCardFromArray = function(array){
 				let card = `
 					<div class="col s12 m6 l4">
 						<div class="card">
-							<div class="card-image">
+						<a href="#modal${object.idProduct}" class="modal-trigger">
+						<div class="card-image" style="background-image: url(${object.productImg}); background-size: cover; background-position: center center; height: 250px;">
+							
 								<div class="tooltipped mini-avatar" style="background-image: url(${ownerPic});" data-position="right" data-tooltip="${owner}"> </div>
-								<img src="${object.productImg}">
-							</div>
+						</div>
+							</a>
 							<div class="card-content">
 								<span class="flow-text product-name" id="${object.idProduct}">${object.productName}</span>
 								<ul class="collapsible">
@@ -70,10 +72,20 @@ export const createObjectCardFromArray = function(array){
 				} else{
 					card += `<a class="waves-effect waves-light btn pink accent-4 right btn-claim" id="btn-claim">I want it!</a>`;
 				}
-				card += `</div></div></div>`;
+				card += `</div></div></div>
+						<div id="modal${object.idProduct}" class="modal modal-fixed-footer">
+						<div class="modal-content">
+						  <h4>${object.productName}</h4>
+						  <p class="center-align"><img src="${object.productImg}"></p>
+						</div>
+						<div class="modal-footer">
+						  <a href="#!" class="modal-close waves-effect waves-red btn-flat">Close</a>
+						</div>
+					    </div>`;
 				$("#product-list").append(card);
 				$(".collapsible").collapsible();
 				$('.tooltipped').tooltip();
+				$('.modal').modal();
 			}
 
 			$('.btn-claim').on("click", function(event){
