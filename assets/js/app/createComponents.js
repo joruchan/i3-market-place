@@ -3,6 +3,7 @@ import { fonctionClaimDB } from "./fonctionClaim.js";
 
 let owner = '';
 let ownerPic = '';
+let ownerEmail = '';
 export const createCategorySelect = function(){
 	for( const category of allCategories ){
 		let select = `<p>
@@ -25,6 +26,9 @@ export const createObjectCardInit = function(){
 	}
 
 let allUsers = [];
+let currentUserId = $("#loggedInUserId").text();
+let currentUserName = "";
+let currentUserEmail = "";
 export const createObjectCardFromArray = function(array){
 	
 	axios.get('../../view/dataDB/allUsers.php')
@@ -38,6 +42,11 @@ export const createObjectCardFromArray = function(array){
 					if(object.creator == user.idUser){
 						owner = user.userName;
 						ownerPic = user.imgProfile;
+						ownerEmail = user.userEmail;
+					}
+					if (user.idUser == currentUserId){
+						currentUserEmail = user.userEmail;
+						currentUserName = user.userName;
 					}
 				}
 				let card = `
@@ -62,6 +71,7 @@ export const createObjectCardFromArray = function(array){
 					card += `<a class="waves-effect waves-light btn pink accent-4 right btn-claim" id="btn-claim">I want it!</a>`;
 				}
 				card += `</div></div></div>`;
+				console.log(currentUserEmail);
 				$("#product-list").append(card);
 				$(".collapsible").collapsible();
 				$('.tooltipped').tooltip();
