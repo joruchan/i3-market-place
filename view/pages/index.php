@@ -2,7 +2,7 @@
 
 session_start();
 if ($_SESSION['log'] != true){
-	header("location: http://localhost/Hackathon/i3-market-place/view/pages/accueil.php");
+	header("location: ../pages/accueil.php");
 }
 
 
