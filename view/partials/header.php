@@ -1,12 +1,8 @@
 <header>
 	<nav>
 		<div class="navbar">
-<<<<<<< HEAD
-			<a href="#!" class="logo"><img src="../../assets/img/Logo.png"></a>
-			<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-=======
-			<a href="../pages" class="logo"><img src="../../assets/img/Logo.png"></a>
->>>>>>> 62fc67e9caf5b138911ba4ebf107582175a1afaf
+			<a href="../pages"  class="logo"><img src="../../assets/img/Logo.png"></a>
+			<a href="../pages"  data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 			<ul class="right hide-on-med-and-down">
 				<li>
 					<form id="search-form">
