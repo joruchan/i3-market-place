@@ -5,7 +5,7 @@ include '../partials/head.php';
 <main id="signup">
 <div class="container">
 <img id="logo" src="../../assets/img/Logo.png" alt="">
-    <h1 id="titre">Sign Up</h1>
+    <h2 id="titre flow-text">Sign Up</h1>
 
     <form id="sign-up" action="../dataDB/signupUsers.php" method="POST">
         <div class="input-field">
