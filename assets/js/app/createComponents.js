@@ -3,6 +3,7 @@ import { fonctionClaimDB } from "./fonctionClaim.js";
 
 let owner = '';
 let ownerPic = '';
+let ownerEmail = '';
 export const createCategorySelect = function(){
 	for( const category of allCategories ){
 		let select = `<p>
@@ -25,6 +26,9 @@ export const createObjectCardInit = function(){
 	}
 
 let allUsers = [];
+let currentUserId = $("#loggedInUserId").text();
+let currentUserName = "";
+let currentUserEmail = "";
 export const createObjectCardFromArray = function(array){
 	
 	axios.get('../../view/dataDB/allUsers.php')
@@ -38,13 +42,18 @@ export const createObjectCardFromArray = function(array){
 					if(object.creator == user.idUser){
 						owner = user.userName;
 						ownerPic = user.imgProfile;
+						ownerEmail = user.userEmail;
+					}
+					if (user.idUser == currentUserId){
+						currentUserEmail = user.userEmail;
+						currentUserName = user.userName;
 					}
 				}
 				let card = `
 					<div class="col s12 m6 l4">
 						<div class="card">
 							<div class="card-image">
-								<img src="${ownerPic}" class="circle tooltipped mini-avatar" data-position="right" data-tooltip="${owner}">
+								<div class="tooltipped mini-avatar" style="background-image: url(${ownerPic});" data-position="right" data-tooltip="${owner}"> </div>
 								<img src="${object.productImg}">
 							</div>
 							<div class="card-content">
@@ -80,9 +89,19 @@ export const createObjectCardFromArray = function(array){
 				}, 500);
 		
 				M.toast({
-					html: 'You have claimed ' + productName + ' !', 
+					html: 'You have claimed ' + productName + " !</br> An email will be sent to its owner and they'll contact you soon.", 
 					completeCallback: function(){
-		
+						Email.send({
+							Host: 'smtp.elasticemail.com',
+							Username: 'jordanedevtest@gmail.com',
+							Password: '2bc75105-db87-4212-a09f-aed941fbaa94',
+							To: ownerEmail,
+							From: 'jordanedevtest@gmail.com',
+							Subject: `${productName} a été claim par ${currentUserName}`,
+							Body: `Cher/Chère ${owner}, 
+								${currentUserName} a claim votre objet "${productName}". Vous pouvez le/la contacter à l'adresse e-mail: ${currentUserEmail}.
+								Bonne journée et merci de participer à cet échange !`,
+							  });
 					}
 				});
 				let productId = event.target.parentElement.firstElementChild.id;
