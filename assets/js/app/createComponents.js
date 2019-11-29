@@ -71,7 +71,6 @@ export const createObjectCardFromArray = function(array){
 					card += `<a class="waves-effect waves-light btn pink accent-4 right btn-claim" id="btn-claim">I want it!</a>`;
 				}
 				card += `</div></div></div>`;
-				console.log(currentUserEmail);
 				$("#product-list").append(card);
 				$(".collapsible").collapsible();
 				$('.tooltipped').tooltip();
@@ -90,9 +89,19 @@ export const createObjectCardFromArray = function(array){
 				}, 500);
 		
 				M.toast({
-					html: 'You have claimed ' + productName + ' !', 
+					html: 'You have claimed ' + productName + " !</br> An email will be sent to its owner and they'll contact you soon.", 
 					completeCallback: function(){
-		
+						Email.send({
+							Host: 'smtp.elasticemail.com',
+							Username: 'jordanedevtest@gmail.com',
+							Password: '2bc75105-db87-4212-a09f-aed941fbaa94',
+							To: ownerEmail,
+							From: 'jordanedevtest@gmail.com',
+							Subject: `${productName} a été claim par ${currentUserName}`,
+							Body: `Cher ${owner}, 
+								${currentUserName} a claim votre objet "${productName}". Vous pouvez le/la contacter à l'adresse e-mail: ${currentUserEmail}.
+								Bonne journée et merci de participer à cet échange !`,
+							  });
 					}
 				});
 				let productId = event.target.parentElement.firstElementChild.id;
