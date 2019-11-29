@@ -23,7 +23,7 @@ $photo = $uploadDir.$idUnique.$_POST['user-img'];
 move_uploaded_file($_FILES['photo']['tmp_name'], $uploadFile );
 
 
-$imgUser = ($_POST['user-img'] !== '' )? $photo : 'https://robohash.org/'.$nom.'.png';
+$imgUser = ($_POST['user-img'] !== '' )? $photo : 'https://robohash.org/'.$email.'.png';
 
 $pass_hash = password_hash ($pass, PASSWORD_DEFAULT,['cost'=>12]);
 
