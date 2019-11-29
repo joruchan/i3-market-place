@@ -2,7 +2,7 @@
     <div class="container">
 	</div>
 	<div class="footer-copyright">
-			<img id="logo-i3" src="../../assets/img/logo-i3.png" alt="">
+			<a href="https://www.interface3.be/"><img id="logo-i3" src="../../assets/img/logo-i3.png" alt=""></a>
 			<p class="center-align">&copy;2019 | Hackathon</p>
 			<a href="../pages/team.php">Team</a>
     </div>

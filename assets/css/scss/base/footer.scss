@@ -6,6 +6,7 @@ footer.page-footer {
     }
     a {
         color: $primary-light;
+        line-height: 0;
         &:hover {
             color: white;
         }

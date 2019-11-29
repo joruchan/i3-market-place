@@ -1,0 +1,26 @@
+#team {
+    margin-bottom: 3rem;
+    h1 {
+        margin-bottom: 5rem;
+    }
+    figure {
+        margin: 0 0 2rem;;
+        padding: 2rem;
+        box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.2);
+        img {
+            width: 100%;
+            max-height: 370px;
+        }
+        figcaption {
+            text-align: center;
+            font-size: 1.5rem;
+            p {
+                margin: 0.5rem 0;
+                &.i3-section {
+                    color: $primary;
+                }
+            }
+            
+        }
+    }
+}
