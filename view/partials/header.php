@@ -1,7 +1,7 @@
 <header>
 	<nav>
 		<div class="navbar">
-			<a href="#!" class="logo"><img src="../../assets/img/Logo.png"></a>
+			<a href="../pages" class="logo"><img src="../../assets/img/Logo.png"></a>
 			<ul class="right hide-on-med-and-down">
 				<li>
 					<form action="" id="search-form">
@@ -13,9 +13,9 @@
 					</form>
 				</li>
 				<li>
-					<a class="waves-effect waves-light btn profile-btn">
+					<a class="waves-effect waves-light btn profile-btn" href='../pages/createlisting.php'>
 						<!-- <i class="material-icons left">face</i> -->
-						Create Post
+						Create Product
 					</a>
 					<a class="waves-effect waves-light btn disconnect-btn" href='../dataDB/logOff.php'>
 						<i class="material-icons left">highlight_off</i>

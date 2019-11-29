@@ -35,10 +35,19 @@ include '../partials/header.php';
         <div class="file-field input-field">
             <div class="btn">
                 <span>Image</span>
-                <input type="file" name='photo'>
+                <input id="file" type="file" name='photo'>
             </div>
             <div class="file-path-wrapper">
                 <input id="post-img" name="post-img" class="file-path validate" type="text">
+            </div>
+        </div>
+        <div class="input-field row">
+            <div class="col s12 l6">
+                <div id="cropper">
+                </div>
+            </div>
+            <div id="crop-result" class="col s12 l6">
+                <img src="">
             </div>
         </div>
         <a class="waves-effect waves-light btn" id='btnProducts'>Create</a>
