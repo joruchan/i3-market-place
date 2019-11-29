@@ -14,6 +14,7 @@ crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script type="module" src="../../assets/js/index.js"></script>
 </body>
 </html>
