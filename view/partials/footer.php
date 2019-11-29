@@ -2,9 +2,9 @@
     <div class="container">
 	</div>
 	<div class="footer-copyright">
-		<div class="container">
+			<img id="logo-i3" src="../../assets/img/logo-i3.png" alt="">
 			<p class="center-align">&copy;2019 | Hackathon</p>
-		</div>
+			<a href="../pages/team.php">Team</a>
     </div>
 </footer>
 <script
