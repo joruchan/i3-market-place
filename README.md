@@ -64,6 +64,6 @@ Côté - Membre(s)
 
 Design  - Alexandra
 
-Front-End - Jordane Valentine Alexandra (support/apprentissage)
+Front-End - Jordane Alexandra (support/apprentissage)
 
-Back-End - Cerise Jordane (support/apprentissage) Valentine (support/apprentissage)
+Back-End - Cerise Jordane (support/apprentissage)
